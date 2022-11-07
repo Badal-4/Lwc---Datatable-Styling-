@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Datatable styling in lwc">
+        <template if:true={tableData}>
+            <div class="myTable">
+                <lightning-datatable key-field="Id"
+                                     data={tableData}
+                                     columns={columns}
+                                     hide-checkbox-column="true"></lightning-datatable>
+            </div>
+        </template>
+    </lightning-card>
+</template>
+
+<!--We need to import static resource for that we have to create a file in notepad with name colors.css .datable-orange
+{
+color : #fff;
+background-color : #e86000;
+}
+
+.datable-orange : hover
+{
+color : #000;
+background-color : #e86000;
+}
+
+.myTable table > thead .slds-cell-fixed.slds-has-button-menu, .myTable table>thead .slds-cell-fixed.slds-has-button-menu:hover 
+{
+background-color : antiquewhite;
+}
+-->
